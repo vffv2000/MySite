@@ -1,0 +1,39 @@
+
+{% extends 'main/layoyt.html' %}
+{% load static%}
+{% block content %}
+    <div class="features">
+    <h1>Про меня</h1>
+
+         <div class="container">
+        <div class="block">
+            <img src="{% static 'main/img/1.jpg' %} " width="640" height="480" alt="Pyton">
+            <div class="block-text-left">
+                <p class="block-title">В общем</p>
+                <p class="block-description">Меня зовут Валентин мне 20 лет. Учусь в БГУИРе на специальности АСОИ. На первом курсе понял что мне нравится Python. И начал учить его самостоятельно</p>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="block">
+            <div class="block-text-right">
+                <p class="block-title right">Python</p>
+                <p class="block-description">Учил Python я полностбю самостоятельно без всяких групповых курсов ичего либо другого. Например этот сайт написан на Django. Одной из многихх библиотек этого языка. </p>
+            </div>
+            <img src="{% static 'main/img/piton.png' %}" width="640" height="480" alt="coffee">
+        </div>
+        <div class="line"></div>
+        <div class="block">
+            <img src="{% static 'main/img/crypto.jpg' %} " width="640" height="480" alt="coffee">
+            <div class="block-text-left">
+                <p class="block-title">Хобби</p>
+                <p class="block-description">Я люблю активный отдых:поиграть в футбол, сходить в тренажёрный зал. Зимой сьездить покататься на сноуборде. Так же увлекаюсь криптовалютами. Узнаю про новые проекты, легализацию, трейдинг и инвестирование в них</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+{% endblock %}
+
+
+{% block title %}Про нас{% endblock %}
